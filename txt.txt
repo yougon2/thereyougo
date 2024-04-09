@@ -1,3 +1,12 @@
+Natural Language Processing (NLP) Engine
+
+Our NLP engine introduces an independent model exclusively designed for intent classification. This dedicated model is built upon a logistic regression framework, optimized for maximum entropy, thus engaging in a self-contained convex optimization problem. To enhance its capability, it underwent a masked language modeling (MLM) pre-training regimen, which significantly bolsters its contextual understanding and predictive accuracy.
+
+The optimization of our model is refined using the AdamW algorithm, a modified version of the Adam optimizer that applies weight decay separately, promoting a more robust and reliable training performance. This independent model is specifically fine-tuned to deliver high precision in intent recognition tasks, and it operates autonomously, requiring no assistance from additional classifiers. Detailed insights into the architecture and the pre-training methodology of this model can be accessed in the Model Documentation Details (MDD, Section 10.3). 
+
+Please consult Section 10.3 of the MDD for an in-depth look at the neural network architecture and the pre-training techniques employed.
+
+
 Word embeddings are a critical concept in natural language processing (NLP), representing words as feature vectors that capture their meanings. This representation allows words with similar meanings to have similar encodings, facilitating their processing by machine learning models. Word embeddings are especially valuable because they transform textual information into a numerical format, enabling algorithms to understand and work with language. The primary goal is to encapsulate the semantic and syntactic properties of words, ensuring that nuances and relationships are captured.
 
 Masked Language Models (MLMs), like BERT (Bidirectional Encoder Representations from Transformers), offer a sophisticated approach to generating word embeddings. In MLMs, a portion of the input tokens in a text sequence is randomly masked, and the model is tasked with predicting these masked tokens based solely on their context. This process necessitates a deep understanding of both left and right context, allowing the model to develop bidirectional capabilities. The training involves feeding the model large text corpora, where it learns to adjust its internal parameters to align its predictions with the actual words. This method requires significant computational power and extensive data.
