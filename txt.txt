@@ -1,3 +1,5 @@
+She was supposed to give everyone access to the call transcripts, at least that’s what I thought. But it's fine if I can’t get in, since we’re doing the mock stuff anyway.
+
 Natural Language Processing (NLP) Engine
 
 Our NLP engine introduces an independent model exclusively designed for intent classification. This dedicated model is built upon a logistic regression framework, optimized for maximum entropy, thus engaging in a self-contained convex optimization problem. To enhance its capability, it underwent a masked language modeling (MLM) pre-training regimen, which significantly bolsters its contextual understanding and predictive accuracy.
